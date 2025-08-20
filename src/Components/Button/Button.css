@@ -1,0 +1,34 @@
+.homepage-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+.homepage-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px; /* space between text & icon */
+    background: #333; /* dark background */
+    color: #fff; /* white text */
+    border: none;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition:0.3s ease, transform 0.2s ease;
+}
+
+.homepage-btn:hover {
+    background: #444;
+    transform: scale(1.05);
+}
+
+.homepage-btn svg {
+    font-size: 16px;
+}
