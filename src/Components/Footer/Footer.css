@@ -1,34 +1,66 @@
 .footer {         
-    color: #ddd;                /* Light text */
-    padding: 15px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ddd;                /* Light text */
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.95rem;
+      /* dark background */
+  flex-wrap: wrap;            /* allows wrapping */
+}
+
+/* Left Section */
+.footer-left p {
+  margin: 0;
+  color: #ddd;
+  font-size: 1rem;
+}
+
+.footer-left .brand {
+  color: #3b82f6;   /* Blue link */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Right Section */
+.footer-right {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-right a {
+  color: #3b82f6;   /* Blue links */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-right a:hover {
+  color: red;
+}
+
+/* ======================== */
+/* 📱 Responsive Design */
+/* ======================== */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;   /* stack vertically */
+    text-align: center;
+    gap: 12px;
+  }
+
+  .footer-left p {
     font-size: 0.95rem;
   }
-  
-  .footer-left p {
-    margin: 0;
-    color: #ddd;
-    font-size: larger;
+
+  .footer-right {
+    justify-content: center;
   }
-  
-  .footer-left .brand {
-    color: #3b82f6;   /* Blue link */
-    text-decoration: none;
-    font-weight: 600;
-  }
-  
+
   .footer-right a {
-    color: #3b82f6;   /* Blue links */
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: larger;
-    transition: color 0.3s ease;
+    margin: 0 10px;
+    font-size: 0.9rem;
   }
-  
-  .footer-right a:hover {
-    color: red;   /* Yellow on hover */
-  }
-  
+}
