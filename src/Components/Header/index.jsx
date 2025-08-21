@@ -6,6 +6,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import logo from "../../assets/Logo/logo.png"
 import Navbar from '../NavBar/index.jsx'
+import "./header.css"
 function index() {
   return (
     <>

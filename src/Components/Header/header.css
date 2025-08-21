@@ -1,0 +1,45 @@
+/* ❌ Removed header container (not needed anymore)
+.container {
+  display: none;
+}
+*/
+
+/* Swiper Movie Card Bar */
+.movie-card-bar {
+  margin: 20px 0;
+  padding: 10px 0;
+}
+
+.movie-card-bar img {
+  width: 100%;
+  height: auto;
+  border-radius: 0;       /* removed border radius */
+  transition: transform 0.3s;
+}
+
+.movie-card-bar img:hover {
+  transform: scale(1.05);
+}
+
+/* Navigation (Navbar below Swiper) */
+.navigation {
+  margin-top: 20px;
+}
+
+/* ======================== */
+/* 📱 Responsive Media Queries */
+/* ======================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .movie-card-bar {
+    margin: 15px 0;
+  }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+  .movie-card-bar {
+    margin: 10px 0;
+  }
+}
