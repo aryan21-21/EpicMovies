@@ -29,27 +29,29 @@ function index() {
       </div>
         
       <div className="movie-card-bar" >
-        <Swiper
-          spaceBetween={8}
-          slidesPerGroup={1}
-          pagination={false}
-          navigation={false}
-          autoplay={{
-            delay: 1500,
-            disableOnInteraction: false,
-          }}
-          loop={true}
-          modules={[Navigation, Autoplay]}
-          className="mySwiper"
-          breakpoints={{
-            320: { slidesPerView: 2 },   // small phones
-            480: { slidesPerView: 3 },   // large phones
-            640: { slidesPerView: 4 },   // tablets
-            768: { slidesPerView: 5 },   // small laptops
-            1024: { slidesPerView: 7 },  // desktops
-            1440: { slidesPerView: 10 }, // big screens
-          }}
-        >
+       <Swiper
+       slidesPerView={10}
+  spaceBetween={0}
+  slidesPerGroup={1}
+  pagination={false}
+  navigation={false}
+  autoplay={{
+    delay: 1500,
+    disableOnInteraction: false,
+  }}
+  loop={true}
+  modules={[Navigation, Autoplay]}
+  className="mySwiper"
+  breakpoints={{
+    320: { slidesPerView: 2 },   // small phones
+    480: { slidesPerView: 3 },   // large phones
+    640: { slidesPerView: 4 },   // tablets
+    768: { slidesPerView: 5 },   // small laptops
+    1024: { slidesPerView: 7 },  // desktops
+    1440: { slidesPerView: 10 }, // big screens
+  }}
+>
+
         
         <SwiperSlide>
           <img src="https://image.tmdb.org/t/p/w342/fjAAxDPzllwnCMqHDXYlw4IlkaL.jpg" alt="" />

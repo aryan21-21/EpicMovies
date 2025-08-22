@@ -31,15 +31,17 @@ img{
   width: 100%;
   padding: 10px 0;
 }
-
+.mySwiper .swiper-slide {
+  margin-right: 0 !important;
+  padding: 0 !important;
+  margin-right: 0px !important;  /* force override */
+}
 /* Each slide image */
 .mySwiper img {
-  width: 100%;
+  display: block;
+  width: 100px;
   height: auto;
-  border-radius: 10px;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-  cursor: pointer;
+  border-radius: 0; 
 }
 
 /* Hover effect */
