@@ -26,6 +26,33 @@ img{
 .navigation {
   margin-top: 20px;
 }
+/* Swiper container */
+.mySwiper {
+  width: 100%;
+  padding: 10px 0;
+}
+
+/* Each slide image */
+.mySwiper img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.mySwiper img:hover {
+  transform: scale(1.05);
+}
+
+/* For small devices */
+@media (max-width: 480px) {
+  .mySwiper img {
+    border-radius: 6px;
+  }
+}
 
 /* ======================== */
 /* 📱 Responsive Media Queries */
