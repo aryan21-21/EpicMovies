@@ -3,7 +3,9 @@
   display: none;
 }
 */
-
+img{
+  width: 200px;
+}
 /* Swiper Movie Card Bar */
 .movie-card-bar {
   padding: 10px 0;
