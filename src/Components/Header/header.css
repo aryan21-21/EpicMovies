@@ -1,59 +1,61 @@
-/* ❌ Removed header container (not needed anymore)
-.container {
-  display: none;
-}
-*/
-img{
-  width: 200px;
-}
-/* Swiper Movie Card Bar */
-.movie-card-bar {
-  padding: 10px 0;
+/* ======================== */
+/* Global Reset & Defaults  */
+/* ======================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.movie-card-bar img {
-  width: 100%;
+img {
+  max-width: 100%;
   height: auto;
-  border-radius: 0;       /* removed border radius */
-  transition: transform 0.3s;
+  display: block;
 }
 
-.movie-card-bar img:hover {
-  transform: scale(1.05);
+/* ======================== */
+/* Swiper Movie Card Bar    */
+/* ======================== */
+.movie-card-bar {
+  padding: 0;          /* no extra padding */
+  margin: 0 auto;
+  width: 100%;
 }
 
-/* Navigation (Navbar below Swiper) */
-.navigation {
-  margin-top: 20px;
-}
-/* Swiper container */
 .mySwiper {
   width: 100%;
-  padding: 10px 0;
+  padding: 0;          /* remove inner spacing */
 }
+
+.mySwiper .swiper-wrapper {
+  gap: 0 !important;   /* ✅ remove flex gap between slides */
+}
+
 .mySwiper .swiper-slide {
-  margin-right: 0 !important;
+  margin: 0 !important;
   padding: 0 !important;
-  margin-right: 0px !important;  /* force override */
 }
-/* Each slide image */
+
+/* ======================== */
+/* Slide Images             */
+/* ======================== */
 .mySwiper img {
-  display: block;
-  width: 100px;
+  width: 100%;
   height: auto;
-  border-radius: 0; 
+  display: block;
+  border-radius: 0;    /* flat edges */
+  transition: transform 0.3s ease-in-out;
 }
 
-/* Hover effect */
 .mySwiper img:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* ✅ zoom on hover */
 }
 
-/* For small devices */
-@media (max-width: 480px) {
-  .mySwiper img {
-    border-radius: 6px;
-  }
+/* ======================== */
+/* Navbar below Swiper      */
+/* ======================== */
+.navigation {
+  margin-top: 20px;
 }
 
 /* ======================== */
@@ -71,5 +73,9 @@ img{
 @media (max-width: 600px) {
   .movie-card-bar {
     margin: 10px 0;
+  }
+
+  .mySwiper img {
+    border-radius: 0;   /* no rounded corners on phones */
   }
 }

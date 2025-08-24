@@ -1,92 +1,75 @@
-import React from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import logo from "../../assets/Logo/logo.png"
-import Navbar from '../NavBar/index.jsx'
-import "./header.css"
-function index() {
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import logo from "../../assets/Logo/logo.png";
+import Navbar from "../NavBar/index.jsx";
+import "./header.css";
+
+function Index() {
   return (
     <>
-        <div className="container">
+      {/* Header Section */}
+      <div className="container">
         <a href="/home">
           <img src={logo} alt="Logo" />
         </a>
-        <span>
-          Disclaimer
-        </span>
-        <span>
-          How To Download?
-        </span>
-        <span>
-          Join Our Group!
-        </span>
-        <span>
-          Movie Request Page
-        </span>
+        <span>Disclaimer</span>
+        <span>How To Download?</span>
+        <span>Join Our Group!</span>
+        <span>Movie Request Page</span>
       </div>
-        
-      <div className="movie-card-bar" >
-       <Swiper
-       slidesPerView={10}
-  spaceBetween={0}
-  slidesPerGroup={1}
-  pagination={false}
-  navigation={false}
-  autoplay={{
-    delay: 1500,
-    disableOnInteraction: false,
-  }}
-  loop={true}
-  modules={[Navigation, Autoplay]}
-  className="mySwiper">
 
-        
-        <SwiperSlide>
-          <img src="https://image.tmdb.org/t/p/w342/fjAAxDPzllwnCMqHDXYlw4IlkaL.jpg" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://image.tmdb.org/t/p/w342/qggpZOGHps82F80lXPxtvtf9HnL.jpg" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://image.tmdb.org/t/p/w342/qFR9az0RsVl93ESVleyl3O92vL.jpg" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://catimages.org/images/2025/03/13/4.Fast..Furious.2009..jpg" alt="" />
-        </SwiperSlide>  
-        <SwiperSlide>
-          <img src="https://image.tmdb.org/t/p/w342/7ix8lfyJWL9H14NmRovMFoaN02u.jpg" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://image.tmdb.org/t/p/w342/7p0nbWCGsHf2sgxJer2AuCx6zwF.jpg" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://image.tmdb.org/t/p/w342/v9fNsN3WNXObKJjBWkiKMuT3XoR.jpg" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://image.tmdb.org/t/p/w342/dDlEmu3EZ0Pgg93K2SVNLCjCSvE.jpg" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://myimg.click/images/2021/01/09/KGF-Chapter.1-Poster-HDHub4u.uno.jpg" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://image.tmdb.org/t/p/w342/zgxpT5Q5pe3FtL99F0UOIglPGrQ.jpg" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://catimages.org/images/2025/07/18/Housefull-5A-2025-HDHub4u.Ms.jpg" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://image.tmdb.org/t/p/w342/3AfHD1HoaQpQwKH8kxRdBKVmzeU.jpg" alt="" />
-        </SwiperSlide>
+      {/* Movie Swiper */}
+      <div className="movie-card-bar">
+        <Swiper
+          spaceBetween={0}       // ✅ no space
+          pagination={false}
+          navigation={false}
+          autoplay={{
+            delay: 1500,
+            disableOnInteraction: false,
+          }}
+          loop={true}
+          breakpoints={{
+            320: { slidesPerView: 2 },   // 📱 Mobile
+            480: { slidesPerView: 3 },   // Small devices
+            640: { slidesPerView: 4 },   // Tablets
+            1024: { slidesPerView: 6 },  // Laptops
+            1280: { slidesPerView: 8 },  // Desktops
+            1536: { slidesPerView: 10 }, // Large screens
+          }}
+          modules={[Navigation, Autoplay]}
+          className="mySwiper"
+        >
+          {[
+            "https://image.tmdb.org/t/p/w342/fjAAxDPzllwnCMqHDXYlw4IlkaL.jpg",
+            "https://image.tmdb.org/t/p/w342/qggpZOGHps82F80lXPxtvtf9HnL.jpg",
+            "https://image.tmdb.org/t/p/w342/qFR9az0RsVl93ESVleyl3O92vL.jpg",
+            "https://catimages.org/images/2025/03/13/4.Fast..Furious.2009..jpg",
+            "https://image.tmdb.org/t/p/w342/7ix8lfyJWL9H14NmRovMFoaN02u.jpg",
+            "https://image.tmdb.org/t/p/w342/7p0nbWCGsHf2sgxJer2AuCx6zwF.jpg",
+            "https://image.tmdb.org/t/p/w342/v9fNsN3WNXObKJjBWkiKMuT3XoR.jpg",
+            "https://image.tmdb.org/t/p/w342/dDlEmu3EZ0Pgg93K2SVNLCjCSvE.jpg",
+            "https://myimg.click/images/2021/01/09/KGF-Chapter.1-Poster-HDHub4u.uno.jpg",
+            "https://image.tmdb.org/t/p/w342/zgxpT5Q5pe3FtL99F0UOIglPGrQ.jpg",
+            "https://catimages.org/images/2025/07/18/Housefull-5A-2025-HDHub4u.Ms.jpg",
+            "https://image.tmdb.org/t/p/w342/3AfHD1HoaQpQwKH8kxRdBKVmzeU.jpg",
+          ].map((src, i) => (
+            <SwiperSlide key={i}>
+              <img src={src} alt={`Movie ${i + 1}`} />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
+
+      {/* Navbar Section */}
       <div className="navigation">
-        <Navbar></Navbar>
+        <Navbar />
       </div>
     </>
-  )
+  );
 }
 
-export default index
+export default Index;
