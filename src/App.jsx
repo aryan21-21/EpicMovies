@@ -32,6 +32,7 @@ function App() {
                 <Route path="webseries" element={<Webseries />} />
                 <Route path="adult" element={<Adult />} />
                 <Route path="Downlode" element={<Downlode/>}/>
+                 <Route path="*" element={<Home />} />
               </Routes>
               <Footer />
             </>
