@@ -41,16 +41,7 @@ function index() {
   }}
   loop={true}
   modules={[Navigation, Autoplay]}
-  className="mySwiper"
-  breakpoints={{
-    320: { slidesPerView: 2 },   // small phones
-    480: { slidesPerView: 3 },   // large phones
-    640: { slidesPerView: 4 },   // tablets
-    768: { slidesPerView: 5 },   // small laptops
-    1024: { slidesPerView: 7 },  // desktops
-    1440: { slidesPerView: 10 }, // big screens
-  }}
->
+  className="mySwiper">
 
         
         <SwiperSlide>
