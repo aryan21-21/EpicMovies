@@ -12,7 +12,10 @@ import Webseries from './Pages/Webseries';
 import Adult from './Pages/Adult';
 import Downlode from "./Pages/Downlode"
 import Header from "./Components/Header";
+import Group from "./Navigate/Group"
+import Download from "./Navigate/Download"
 
+import Disclaimer  from "./Navigate/Disclaimer"
 function App() {
   return (
     <BrowserRouter>
@@ -32,6 +35,9 @@ function App() {
                 <Route path="webseries" element={<Webseries />} />
                 <Route path="adult" element={<Adult />} />
                 <Route path="Downlode" element={<Downlode/>}/>
+                <Route path='Group' element={<Group/>}></Route>
+                <Route path='Download' element={<Download/>}></Route>
+                <Route path='Disclaimer' element={<Disclaimer />}></Route>
                  <Route path="*" element={<Home />} />
               </Routes>
               <Footer />

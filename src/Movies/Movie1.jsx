@@ -167,7 +167,7 @@
         <img src={poster} alt={title} />
         <div className="content">
           <h3>{title}</h3>
-          <p>{description}</p>
+          <p className="movie-des">{description}</p>
         </div>
       </div>
     );

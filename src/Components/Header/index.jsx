@@ -15,35 +15,33 @@ function Index() {
         <a href="/home">
           <img src={logo} alt="Logo" />
         </a>
-        <span>Disclaimer</span>
-        <span>How To Download?</span>
-        <span>Join Our Group!</span>
+        <a href="Disclaimer">
+          <span>Disclaimer</span>
+        </a>
+        <a href="Download">
+          <span>How To Download?</span>
+        </a>
+        <a href="Group">
+          <span>Join Our Group!</span>
+        </a>
         <span>Movie Request Page</span>
       </div>
 
       {/* Movie Swiper */}
       <div className="movie-card-bar">
         <Swiper
-          spaceBetween={0}       // ✅ no space
-          pagination={false}
-          navigation={false}
-          autoplay={{
-            delay: 1500,
-            disableOnInteraction: false,
-          }}
-          loop={true}
-          breakpoints={{
-            320: { slidesPerView: 2 },   // 📱 Mobile
-            480: { slidesPerView: 3 },   // Small devices
-            640: { slidesPerView: 4 },   // Tablets
-            1024: { slidesPerView: 6 },  // Laptops
-            1280: { slidesPerView: 8 },  // Desktops
-            1536: { slidesPerView: 10 }, // Large screens
-          }}
-          modules={[Navigation, Autoplay]}
-          className="mySwiper"
-        >
-          {[
+        spaceBetween={0}        // ✅ no gap between slides
+        slidesPerView={8}
+        loop={true}
+        speed={1500}
+        autoplay={{
+          delay: 0,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay]}
+        className="mySwiper no-space-swiper"   
+      >
+      {[
             "https://image.tmdb.org/t/p/w342/fjAAxDPzllwnCMqHDXYlw4IlkaL.jpg",
             "https://image.tmdb.org/t/p/w342/qggpZOGHps82F80lXPxtvtf9HnL.jpg",
             "https://image.tmdb.org/t/p/w342/qFR9az0RsVl93ESVleyl3O92vL.jpg",
