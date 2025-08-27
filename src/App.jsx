@@ -14,6 +14,7 @@ import Downlode from "./Pages/Downlode"
 import Header from "./Components/Header";
 import Group from "./Navigate/Group"
 import Download from "./Navigate/Download"
+import Request from "./Navigate/Request"
 
 import Disclaimer  from "./Navigate/Disclaimer"
 function App() {
@@ -38,6 +39,7 @@ function App() {
                 <Route path='Group' element={<Group/>}></Route>
                 <Route path='Download' element={<Download/>}></Route>
                 <Route path='Disclaimer' element={<Disclaimer />}></Route>
+                <Route path='Request' element={<Request/>}></Route>
                  <Route path="*" element={<Home />} />
               </Routes>
               <Footer />

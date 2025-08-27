@@ -1,0 +1,28 @@
+.info h2{
+    color: white;
+    margin-left: 450px;
+} 
+
+.info h6{
+    font-style: italic;
+    color: yellow;
+    margin-left: 570px;
+    font-size: larger;
+}
+
+.pargraph  p{
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: large;
+}
+
+.pargraph span{
+    margin-left: 0px;
+    margin-right: 15px;
+    color: yellow;
+}
+
+.pargraph h4{
+    margin-left: 200px;
+    color: orange;
+}

@@ -24,14 +24,16 @@ function Index() {
         <a href="Group">
           <span>Join Our Group!</span>
         </a>
+        <a href="Request">
         <span>Movie Request Page</span>
+        </a>
       </div>
 
       {/* Movie Swiper */}
       <div className="movie-card-bar">
         <Swiper
         spaceBetween={0}        // ✅ no gap between slides
-        slidesPerView={8}
+        slidesPerView={13}
         loop={true}
         speed={1500}
         autoplay={{
@@ -41,7 +43,22 @@ function Index() {
         modules={[Autoplay]}
         className="mySwiper no-space-swiper"   
       >
-      {[
+      {[  
+            "https://image.tmdb.org/t/p/w342/u7M4LAaFVcwLr3sLsuORHPncTup.jpg",
+            "https://image.tmdb.org/t/p/w342/1H9hdeRoniz30RKhyr1uLdBTfpG.jpg",
+            "https://image.tmdb.org/t/p/w342/1I0ORYrbqZxtKmuwsoRIaajUvBg.jpg",
+            "https://image.tmdb.org/t/p/w342/5DJbIWxIotQYUnRrRGhSxjxmvye.jpg",
+            "https://image.tmdb.org/t/p/w342/qTNIxDIzKjLLuS17fxdXjcKAlW7.jpg",
+            "https://image.tmdb.org/t/p/w342/tCZFfYTIwrR7n94J6G14Y4hAFU6.jpg",
+            "https://image.tmdb.org/t/p/w342/1upx2GVqb9cxE7e376X83VTI7hz.jpg",
+            "https://image.tmdb.org/t/p/w342/4MVGcnBYTzWQR6J8Z9g3obhZqxf.jpg",
+            "https://image.tmdb.org/t/p/w342/vqw8D35ZBcb09VI9hvedgyd7FQD.jpg",
+            "https://image.tmdb.org/t/p/w342/6x0wmp2LlLqhEbd8XKjJpTHdHsT.jpg",
+            "https://image.tmdb.org/t/p/w342/gcSNS5cy1iOmYawIdJCzoc873rQ.jpg",
+            "https://image.tmdb.org/t/p/w342/1I0ORYrbqZxtKmuwsoRIaajUvBg.jpg",
+            "https://image.tmdb.org/t/p/w342/iyxwxDZCpIm0vIORaHpmgJv2BGF.jpg",
+            "https://image.tmdb.org/t/p/w342/6x0wmp2LlLqhEbd8XKjJpTHdHsT.jpg",
+            "https://image.tmdb.org/t/p/w342/u7M4LAaFVcwLr3sLsuORHPncTup.jpg",
             "https://image.tmdb.org/t/p/w342/fjAAxDPzllwnCMqHDXYlw4IlkaL.jpg",
             "https://image.tmdb.org/t/p/w342/qggpZOGHps82F80lXPxtvtf9HnL.jpg",
             "https://image.tmdb.org/t/p/w342/qFR9az0RsVl93ESVleyl3O92vL.jpg",
@@ -54,6 +71,7 @@ function Index() {
             "https://image.tmdb.org/t/p/w342/zgxpT5Q5pe3FtL99F0UOIglPGrQ.jpg",
             "https://catimages.org/images/2025/07/18/Housefull-5A-2025-HDHub4u.Ms.jpg",
             "https://image.tmdb.org/t/p/w342/3AfHD1HoaQpQwKH8kxRdBKVmzeU.jpg",
+            
           ].map((src, i) => (
             <SwiperSlide key={i}>
               <img src={src} alt={`Movie ${i + 1}`} />

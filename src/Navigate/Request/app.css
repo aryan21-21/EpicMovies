@@ -1,0 +1,32 @@
+.tab h4{
+    font-style: italic;
+    margin-left: 30%;
+    color: green;
+} 
+
+.tab h5{
+    color: red;
+    margin-left: 37%;
+}
+
+.request input{
+    padding-left: 20px;
+    padding: 5px;
+    margin-left: 40%;
+    background:white;
+    border-radius: 5px;
+    color: #000;
+}   
+
+.request button{
+    padding-left: 50px;
+    padding: 5px;
+    margin-left: 42%;
+    background: blue;
+    border-radius: 5px;
+}
+
+.request button:hover
+{
+    background: #2761df;
+}

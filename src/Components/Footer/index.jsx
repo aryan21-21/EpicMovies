@@ -9,13 +9,13 @@ function Footer() {
       </div>
 
       <div className="footer-right ml-5">
-        <a href="/disclaimer">Disclaimer</a>
-        <a href="/how-to-download">How To Download?</a>
-        <a href="/join-group">Join Our Group!</a>
-        <a href="/movie-request">Movie Request Page</a>
+        <a href="/Disclaimer">Disclaimer</a>
+        <a href="/Download">How To Download?</a>
+        <a href="/Group">Join Our Group!</a>
+        <a href="/Request">Movie Request Page</a>
       </div>
     </footer>
-  )
+  ) 
 }
 
 export default Footer

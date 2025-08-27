@@ -18,7 +18,6 @@ function index() {
             <a href="https://t.me/+gbVTBY7biTM4ZjM9" className='mt-3'>
                 <span className='link mt-5'>➤Click Here To join➤</span>
             </a>
-
             <h6>We have also Opened our new list site with name EpicMovie.com  Here you will get all list of EpicMovie official site and news related to any updates</h6>
         </div>
     </div>    
