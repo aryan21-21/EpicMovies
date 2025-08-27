@@ -15,8 +15,14 @@ import Header from "./Components/Header";
 import Group from "./Navigate/Group"
 import Download from "./Navigate/Download"
 import Request from "./Navigate/Request"
-
 import Disclaimer  from "./Navigate/Disclaimer"
+import Action from './Genral/Action';
+import Comedy from './Genral/Comedy';
+import Drama from './Genral/Drama';
+import Horror from './Genral/Horror';
+import Romance from './Genral/Romance';
+import SciFi from './Genral/SciFi';
+import Thriller from './Genral/Thriller';
 function App() {
   return (
     <BrowserRouter>
@@ -36,10 +42,17 @@ function App() {
                 <Route path="webseries" element={<Webseries />} />
                 <Route path="adult" element={<Adult />} />
                 <Route path="Downlode" element={<Downlode/>}/>
-                <Route path='Group' element={<Group/>}></Route>
-                <Route path='Download' element={<Download/>}></Route>
-                <Route path='Disclaimer' element={<Disclaimer />}></Route>
-                <Route path='Request' element={<Request/>}></Route>
+                <Route path='Group' element={<Group/>}/>
+                <Route path='Download' element={<Download/>}/>
+                <Route path='Disclaimer' element={<Disclaimer />}/>
+                <Route path='Request' element={<Request/>}/>
+                <Route path='Thriller' element={<Thriller/>}/>
+                <Route path='SciFi' element={<SciFi/>}/>
+                <Route path='Romance' element={<Romance/>}/>
+                <Route path='Horror' element={<Horror/>}/>
+                <Route path='Drama' element={<Drama/>}/>
+                <Route path='Comedy' element={<Comedy/>}/>
+                <Route path='Action' element={<Action/>}/>
                  <Route path="*" element={<Home />} />
               </Routes>
               <Footer />

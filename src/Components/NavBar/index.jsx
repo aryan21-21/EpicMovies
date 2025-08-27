@@ -15,8 +15,8 @@ const Navbar = () => {
           <a href="/home" className='nav-link'>EpicMovie Home <IoHomeOutline></IoHomeOutline></a>
           <a href="/Bollywood" className="nav-link">BollyWood</a>
           <a href="/Hollywood" className="nav-link">HollyWood</a>
-          <a href="HindiDubbes" className="nav-link">HindiDubbed</a>
-          <a href="/SouthHindi" className="nav-link">SouthHindi</a>
+          <a href="HindiDubbed" className="nav-link">HindiDubbed</a>
+          <a href="/South" className="nav-link">SouthHindi</a>
           <a href="/Webseries" className="nav-link">Web series</a>
           <a href="/Adult" className="nav-link">18+</a>
           
@@ -32,14 +32,13 @@ const Navbar = () => {
             
             {showGenres && (
               <div className="dropdown-menu">
-                <a href="#" className="dropdown-item">Action</a>
-                <a href="#" className="dropdown-item">Comedy</a>
-                <a href="#" className="dropdown-item">Drama</a>
-                <a href="#" className="dropdown-item">Thriller</a>
-                <a href="#" className="dropdown-item">Romance</a>
-                <a href="#" className="dropdown-item">Horror</a>
-                <a href="#" className="dropdown-item">Sci-Fi</a>
-                <a href="#" className="dropdown-item">More...</a>
+                <a href="Action" className="dropdown-item">Action</a>
+                <a href="Comedy" className="dropdown-item">Comedy</a>
+                <a href="Drama" className="dropdown-item">Drama</a>
+                <a href="Thriller" className="dropdown-item">Thriller</a>
+                <a href="Romance" className="dropdown-item">Romance</a>
+                <a href="Horror" className="dropdown-item">Horror</a>
+                <a href="SciFi" className="dropdown-item">Sci-Fi</a>
               </div>
             )}
           </div>

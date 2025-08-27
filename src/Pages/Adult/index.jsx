@@ -1,9 +1,13 @@
 import React from 'react'
-
+import { PiFolderSimpleFill } from "react-icons/pi";
+import Button from "../../Components/Button/index.jsx"
 function index() {
   return (
-    <>
-        <h3>18+</h3>
+    <>  
+      <Button></Button>
+      <div className="container">
+        <h3><PiFolderSimpleFill/>     18+[Adult]</h3>
+      </div>
     </>
   )
 }

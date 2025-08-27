@@ -9,7 +9,7 @@ function Index() {
       <Button/>  
       <div className="latest-navbar mt-3">
         <div className="container">
-          <h3><PiFolderSimpleFill/>Bollywood</h3>
+          <h3><PiFolderSimpleFill/>             Bollywood</h3>
         </div>
         <div className="movies">
           <Bollymovie/>
