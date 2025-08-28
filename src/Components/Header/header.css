@@ -1,84 +1,105 @@
-/* ======================== */
-/* Global Reset & Defaults  */
-/* ======================== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Remove default padding/gap from Swiper */
-.no-space-swiper,
-.mySwiper {
-  padding: 0 !important;
-  margin: 0 !important;
-  width: 100%;
-}
-
-.no-space-swiper .swiper-wrapper,
-.mySwiper .swiper-wrapper {
-  margin: 0 !important;
-  gap: 0 !important;   /* ✅ ensures no flex gap */
-}
-
-.no-space-swiper .swiper-slide,
-.mySwiper .swiper-slide {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* ======================== */
-/* Poster / Slide Images    */
-/* ======================== */
-.no-space-swiper img,
-.mySwiper img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;     /* ✅ avoids stretching */
-  border-radius: 0;
-  transition: transform 0.3s ease-in-out;
-}
-
-/* Zoom hover effect */
-.mySwiper img:hover {
-  transform: scale(1.05);
-}
-
-/* ======================== */
-/* Movie Card Bar           */
-/* ======================== */
-.movie-card-bar {
-  padding: 0;
-  margin: 0 auto;
-  width: 100%;
-}
-
-/* ======================== */
-/* Navbar below Swiper      */
-/* ======================== */
-.navigation {
-  margin-top: 20px;
-}
-
-/* ======================== */
-/* 📱 Responsive Media Queries */
-/* ======================== */
-
-/* Tablets */
-@media (max-width: 992px) {
-  .movie-card-bar {
-    margin: 15px 0;
+  /* ======================== */
+  /* Global Reset & Defaults  */
+  /* ======================== */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-}
-
-/* Phones */
-@media (max-width: 600px) {
-  .movie-card-bar {
-    margin: 10px 0;
+  /* Remove default padding/gap from Swiper */
+  .no-space-swiper {
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
-  .mySwiper img {
+  .no-space-swiper .swiper-wrapper {
+    margin: 0 !important;
+  }
+
+  .no-space-swiper .swiper-slide {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Poster images */
+  .no-space-swiper img {
+    display: block;       /* removes inline spacing */
+    width: 100px;
+    height: 100%;
+    object-fit: cover;
     border-radius: 0;
+    gap: 0px;
   }
-}
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* ======================== */
+  /* Swiper Movie Card Bar    */
+  /* ======================== */
+  .movie-card-bar {
+    padding: 0;          /* no extra padding */
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .mySwiper {
+    width: 100%;
+    padding: 0;          /* remove inner spacing */
+  }
+
+  .mySwiper .swiper-wrapper {
+    gap: 0 !important;   /* ✅ remove flex gap between slides */
+  }
+
+  .mySwiper .swiper-slide {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* ======================== */
+  /* Slide Images             */
+  /* ======================== */
+  .mySwiper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0;    /* flat edges */
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .mySwiper img:hover {
+    transform: scale(1.05); /* ✅ zoom on hover */
+  }
+
+  /* ======================== */
+  /* Navbar below Swiper      */
+  /* ======================== */
+  .navigation {
+    margin-top: 20px;
+  }
+
+  /* ======================== */
+  /* 📱 Responsive Media Queries */
+  /* ======================== */
+
+  /* Tablets */
+  @media (max-width: 992px) {
+    .movie-card-bar {
+      margin: 15px 0;
+    }
+  }
+
+  /* Phones */
+  @media (max-width: 600px) {
+    .movie-card-bar {
+      margin: 10px 0;
+    }
+
+    .mySwiper img {
+      border-radius: 0;   /* no rounded corners on phones */
+    }
+  }

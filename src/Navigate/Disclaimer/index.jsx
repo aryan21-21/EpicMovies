@@ -95,7 +95,7 @@ function index() {
               intellectual property that supports a sustainable creative industry.
             </p>
 
-            <h4>Thank you for choosing EpicMovie.gw.Tv! Enjoy High-Quality Entertainment. Happy Viewing!</h4>
+            <h4 className='notice'>Thank you for choosing EpicMovie.gw.Tv! Enjoy High-Quality Entertainment. Happy Viewing!</h4>
 
             <p>
               <span>

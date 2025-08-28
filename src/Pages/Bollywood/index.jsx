@@ -6,6 +6,7 @@ import Bollymovie from "../Bollywood/Bollymovie.jsx"
 function Index() {
   return (
     <>
+      
       <Button/>  
       <div className="latest-navbar mt-3">
         <div className="container">
