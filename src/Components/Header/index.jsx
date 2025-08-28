@@ -1,49 +1,56 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/navigation";
 import logo from "../../assets/Logo/logo.png";
 import Navbar from "../NavBar/index.jsx";
 import "./header.css";
 
 function Index() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <>
       {/* Header Section */}
-      <div className="container">
-        <a href="/home">
-          <img src={logo} alt="Logo" />
-        </a>
-        <a href="Disclaimer">
-          <span>Disclaimer</span>
-        </a>
-        <a href="Download">
-          <span>How To Download?</span>
-        </a>
-        <a href="Group">
-          <span>Join Our Group!</span>
-        </a>
-        <a href="Request">
-        <span>Movie Request Page</span>
-        </a>
-      </div>
+      <header className="header">
+        <div className="header-left">
+          <a href="/home">
+            <img src={logo} alt="Logo" className="logo" />
+          </a>
+        </div>
+
+        {/* Hamburger for mobile */}
+        <div
+          className="hamburger"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          ☰
+        </div>
+
+        {/* Links */}
+        <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
+          <a href="Disclaimer">Disclaimer</a>
+          <a href="Download">How To Download?</a>
+          <a href="Group">Join Our Group!</a>
+          <a href="Request">Movie Request Page</a>
+        </nav>
+      </header>
 
       {/* Movie Swiper */}
       <div className="movie-card-bar">
         <Swiper
-        spaceBetween={0}        // ✅ no gap between slides
-        slidesPerView={13}
-        loop={true}
-        speed={1500}
-        autoplay={{
-          delay: 0,
-          disableOnInteraction: false,
-        }}
-        modules={[Autoplay]}
-        className="mySwiper no-space-swiper"   
-      >
-      {[  
+          spaceBetween={0}
+          slidesPerView={13}
+          loop={true}
+          speed={1500}
+          autoplay={{
+            delay: 0,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay]}
+          className="mySwiper no-space-swiper"
+        >
+          {[
             "https://image.tmdb.org/t/p/w342/u7M4LAaFVcwLr3sLsuORHPncTup.jpg",
             "https://image.tmdb.org/t/p/w342/1H9hdeRoniz30RKhyr1uLdBTfpG.jpg",
             "https://image.tmdb.org/t/p/w342/1I0ORYrbqZxtKmuwsoRIaajUvBg.jpg",
@@ -55,10 +62,7 @@ function Index() {
             "https://image.tmdb.org/t/p/w342/vqw8D35ZBcb09VI9hvedgyd7FQD.jpg",
             "https://image.tmdb.org/t/p/w342/6x0wmp2LlLqhEbd8XKjJpTHdHsT.jpg",
             "https://image.tmdb.org/t/p/w342/gcSNS5cy1iOmYawIdJCzoc873rQ.jpg",
-            "https://image.tmdb.org/t/p/w342/1I0ORYrbqZxtKmuwsoRIaajUvBg.jpg",
             "https://image.tmdb.org/t/p/w342/iyxwxDZCpIm0vIORaHpmgJv2BGF.jpg",
-            "https://image.tmdb.org/t/p/w342/6x0wmp2LlLqhEbd8XKjJpTHdHsT.jpg",
-            "https://image.tmdb.org/t/p/w342/u7M4LAaFVcwLr3sLsuORHPncTup.jpg",
             "https://image.tmdb.org/t/p/w342/fjAAxDPzllwnCMqHDXYlw4IlkaL.jpg",
             "https://image.tmdb.org/t/p/w342/qggpZOGHps82F80lXPxtvtf9HnL.jpg",
             "https://image.tmdb.org/t/p/w342/qFR9az0RsVl93ESVleyl3O92vL.jpg",
@@ -71,7 +75,6 @@ function Index() {
             "https://image.tmdb.org/t/p/w342/zgxpT5Q5pe3FtL99F0UOIglPGrQ.jpg",
             "https://catimages.org/images/2025/07/18/Housefull-5A-2025-HDHub4u.Ms.jpg",
             "https://image.tmdb.org/t/p/w342/3AfHD1HoaQpQwKH8kxRdBKVmzeU.jpg",
-            
           ].map((src, i) => (
             <SwiperSlide key={i}>
               <img src={src} alt={`Movie ${i + 1}`} />

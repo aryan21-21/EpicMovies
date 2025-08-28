@@ -6,73 +6,52 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 /* Remove default padding/gap from Swiper */
-.no-space-swiper {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-.no-space-swiper .swiper-wrapper {
-  margin: 0 !important;
-}
-
-.no-space-swiper .swiper-slide {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* Poster images */
-.no-space-swiper img {
-  display: block;       /* removes inline spacing */
-  width: 100px;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 0;
-  gap: 0px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* ======================== */
-/* Swiper Movie Card Bar    */
-/* ======================== */
-.movie-card-bar {
-  padding: 0;          /* no extra padding */
-  margin: 0 auto;
-  width: 100%;
-}
-
+.no-space-swiper,
 .mySwiper {
+  padding: 0 !important;
+  margin: 0 !important;
   width: 100%;
-  padding: 0;          /* remove inner spacing */
 }
 
+.no-space-swiper .swiper-wrapper,
 .mySwiper .swiper-wrapper {
-  gap: 0 !important;   /* ✅ remove flex gap between slides */
+  margin: 0 !important;
+  gap: 0 !important;   /* ✅ ensures no flex gap */
 }
 
+.no-space-swiper .swiper-slide,
 .mySwiper .swiper-slide {
   margin: 0 !important;
   padding: 0 !important;
 }
 
 /* ======================== */
-/* Slide Images             */
+/* Poster / Slide Images    */
 /* ======================== */
+.no-space-swiper img,
 .mySwiper img {
-  width: 100%;
-  height: auto;
   display: block;
-  border-radius: 0;    /* flat edges */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* ✅ avoids stretching */
+  border-radius: 0;
   transition: transform 0.3s ease-in-out;
 }
 
+/* Zoom hover effect */
 .mySwiper img:hover {
-  transform: scale(1.05); /* ✅ zoom on hover */
+  transform: scale(1.05);
+}
+
+/* ======================== */
+/* Movie Card Bar           */
+/* ======================== */
+.movie-card-bar {
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
 }
 
 /* ======================== */
@@ -100,6 +79,6 @@ img {
   }
 
   .mySwiper img {
-    border-radius: 0;   /* no rounded corners on phones */
+    border-radius: 0;
   }
 }

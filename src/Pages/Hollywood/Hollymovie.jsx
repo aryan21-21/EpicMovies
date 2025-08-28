@@ -1,8 +1,27 @@
 import React from "react";
-// import "../Movies/Movie.css";  // Import CSS
 
 const movies = [
-    {
+      {
+        poster  : "https://image.tmdb.org/t/p/w500/1I0ORYrbqZxtKmuwsoRIaajUvBg.jpg",
+        title : "Thunderbolts* (2025)",
+        description : "BluRay [Hindi (DD5.1) & English] 4K 1080p 720p & 480p Dual Audio [x264/10Bit-HEVC] | Full Movie",
+      },
+      {
+        poster  : "https://imgshare.info/images/2025/08/27/The.Boss.Baby.2017.jpg",
+        title : "The Boss Baby (2017) ",
+        description : "BluRay Dual Audio [Hindi ORG5.1 & English] 1080p 720p 480p x264 HD | Full Movie",
+      },
+      {
+        poster  : "https://image.tmdb.org/t/p/w500/5DJbIWxIotQYUnRrRGhSxjxmvye.jpg",
+        title : "The Bad Guys 2 (2025)",
+        description : "DS4K WEB-DL [Hindi (DD5.1) & English] 4K 1080p 720p & 480p Dual Audio [x264/10Bit-HEVC] | Full Movie",
+      },
+      {
+        poster:"https://imgshare.info/images/2025/08/27/Blade-Runner-1982.jpg",
+        title : "Blade Runner (1982) ",
+        description : "BluRay Dual Audio [Hindi DD 2.0 & English] 1080p 720p & 480p x264 HD | Full Movie",
+      },
+      {
         poster: "https://image.tmdb.org/t/p/w500/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg",
         title: "Deadpool & Wolverine (2024)",
         description: "IMAX WEB-DL [English + Hindi] 4K 1080p 720p & 480p Dual Audio [x264/10Bit-HEVC] | Full Movie",

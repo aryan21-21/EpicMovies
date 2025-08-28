@@ -19,7 +19,7 @@
 }   
 
 .request button{
-    padding-left: 50px;
+    padding-left: 45px;
     padding: 5px;
     margin-left: 42%;
     background: blue;
@@ -29,4 +29,11 @@
 .request button:hover
 {
     background: #2761df;
+}
+
+.message{
+    margin-top: 15px;
+    font-size: larger;
+    margin-left: 39%;
+    margin-right: 40%;
 }
