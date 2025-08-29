@@ -1,32 +1,78 @@
-.tag{
-    margin-left: 400px;
-    font-size: xx-large;
-    color: rgb(25, 25, 211);
-}
- .movies tag :hover{
-    color:white;
-}
-.notic{
-    margin-left: 240px;
-    color: red;
+.tag {
+  text-align: center;          /* ✅ center instead of margin-left */
+  font-size: 2rem;             /* same as xx-large */
+  color: rgb(25, 25, 211);
+  margin-left: 28%;
 }
 
-.imge{
-    margin-left: 450px;
-    width: 350px;
-    border-radius: 15px;
+.movies .tag:hover {
+  color: white;
 }
 
-.link{
-    margin-left: 500px;
-    font-size: x-large;
-    color: red;
+.notic {
+  text-align: center;
+  color: red;
+  margin: 15px 0;
+  font-size: 1.1rem;
 }
 
-.link:hover{
-    color: white;
+.imge {
+  display: block;
+  margin: 20px auto;           /* ✅ centers image */
+  width: 100%;
+  max-width: 350px;            /* image won’t get too big */
+  border-radius: 15px;
 }
-h6{
-    margin-left: 100px;
-    font-size: 19px;
+
+.link {
+  display: block;
+  text-align: center;
+  font-size: 1.3rem;           /* similar to x-large */
+  color: red;
+  margin: 20px 0;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: white;
+}
+
+h6 {
+  text-align: center;          /* ✅ center instead of margin-left */
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+/* 📱 Tablet screens */
+@media (max-width: 768px) {
+  .tag {
+    font-size: 1.6rem;
+  }
+
+  .link {
+    font-size: 1.1rem;
+  }
+
+  .imge {
+    max-width: 280px;
+  }
+}
+
+/* 📱 Mobile screens */
+@media (max-width: 480px) {
+  .tag {
+    font-size: 1.3rem;
+  }
+
+  .link {
+    font-size: 1rem;
+  }
+
+  .imge {
+    max-width: 100%;          /* take full width */
+  }
+
+  h6 {
+    font-size: 0.9rem;
+  }
 }
