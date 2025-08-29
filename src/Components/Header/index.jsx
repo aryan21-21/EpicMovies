@@ -21,7 +21,7 @@ function Index() {
         <a href="Download">
           <span>How To Download?</span>
         </a>
-        <a href="Group">
+        <a href="Group">  
           <span>Join Our Group!</span>
         </a>
         <a href="Request">
@@ -32,17 +32,17 @@ function Index() {
       {/* Movie Swiper */}
       <div className="movie-card-bar">
         <Swiper
-        spaceBetween={0}        // ✅ no gap between slides
-        slidesPerView={13}
-        loop={true}
-        speed={1500}
-        autoplay={{
-          delay: 0,
-          disableOnInteraction: false,
-        }}
-        modules={[Autoplay]}
-        className="mySwiper no-space-swiper"   
-      >
+          spaceBetween={0}        // ✅ no gap between slides
+          slidesPerView={12}
+          loop={true}
+          speed={1500}
+          autoplay={{
+            delay: 0,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay]}
+          className="mySwiper no-space-swiper"   
+        > 
       {[  
             "https://image.tmdb.org/t/p/w342/u7M4LAaFVcwLr3sLsuORHPncTup.jpg",
             "https://image.tmdb.org/t/p/w342/1H9hdeRoniz30RKhyr1uLdBTfpG.jpg",
@@ -79,8 +79,6 @@ function Index() {
           ))}
         </Swiper>
       </div>
-
-      {/* Navbar Section */}
       <div className="navigation">
         <Navbar />
       </div>

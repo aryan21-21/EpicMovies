@@ -18,7 +18,7 @@ const Navbar = () => {
           <a href="HindiDubbed" className="nav-link">HindiDubbed</a>
           <a href="/South" className="nav-link">SouthHindi</a>
           <a href="/Webseries" className="nav-link">Web series</a>
-          <a href="/Adult" className="nav-link">18+</a>
+          <a href="/Adult" className="nav-link">Gujrati</a>
           
         
           <div 

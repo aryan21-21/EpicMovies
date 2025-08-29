@@ -3,6 +3,16 @@ import React from "react";
 
 const movies = [
   {
+    poster : "https://catimages.org/images/2025/08/29/Akshardham-Operation-Vajra-Shakti-2025-HDHub4u.Ms.jpg",
+    title : "Akshardham: Operation Vajra Shakti (2025)",
+    description : "WEB-DL [Hindi DD2.0] 1080p 720p & 480p [x264/HEVC] | Full Movie",
+  },
+  {
+    poster : "https://image.tmdb.org/t/p/w500/znZh3qFHHpkDcgza5EPu41y1CeV.jpg",
+    title : "Songs of Paradise (2025) WEB-DL",
+    description : "WEB-DL [Hindi DD5.1] 4K 1080p 720p & 480p [x264/HEVC] | Full Movie",
+  },
+  {
     poster: "https://catimages.org/images/2025/06/21/The-Great-Indian-Kapil-Show-2025-S03-HDHub4u.Ms.jpg",
     title: "The Great Indian Kapil Show (Season 3)",
     description:
