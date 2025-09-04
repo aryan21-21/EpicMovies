@@ -46,7 +46,7 @@
 
 /* Card Text */
 .movie-card .content {
-  padding: 12px;
+  padding: 0px;
   color: white;
   flex-grow: 1; /* makes all cards equal height */
   display: flex;

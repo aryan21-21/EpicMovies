@@ -41,7 +41,7 @@ function Index() {
           <input
             type="text"
             name="movie"
-            placeholder="Enter Your Movie name*"
+            placeholder="Enter Movie name*"
             required
             className="mt-3"
             value={movie}

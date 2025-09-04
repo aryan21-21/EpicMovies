@@ -39,8 +39,8 @@
 
 h6 {
   text-align: center;          /* ✅ center instead of margin-left */
-  font-size: 1rem;
-  margin: 10px 0;
+  font-size: larger;
+  margin: 20px 20px;
 }
 
 /* 📱 Tablet screens */

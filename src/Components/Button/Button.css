@@ -27,6 +27,7 @@ a{
 .homepage-btn:hover {
     background: #444;
     transform: scale(1.05);
+    text-decoration: none;
 }
 
 .homepage-btn svg {

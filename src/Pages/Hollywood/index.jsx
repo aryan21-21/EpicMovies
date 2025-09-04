@@ -7,7 +7,7 @@ function Index() {
   return (
     <>
       <Button/>  
-      <div className="latest-navbar mt-3">
+      <div className="latest-navbar mt-1">
         <div className="container">
           <h3><PiFolderSimpleFill/>           Hollywood</h3>
         </div>

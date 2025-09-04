@@ -2,7 +2,7 @@
 .info h2 {
   color: white;
   text-align: center;   /* center instead of fixed margin */
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .info h6 {
@@ -14,7 +14,7 @@
 }
 
 .pargraph p {
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 0 20px;       /* padding instead of fixed margin */
   font-size: 1.1rem;
   max-width: 900px;      /* keeps text readable on wide screens */
@@ -22,6 +22,7 @@
 }
 
 .pargraph span {
+  margin-left: 0px;
   margin-right: 15px;
   color: yellow;
 }
